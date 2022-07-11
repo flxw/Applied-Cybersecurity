@@ -17,8 +17,8 @@ jobs:
       run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u root-de --password-stdin
     - uses: actions/checkout@v3
     - name: Build
-      run: docker build . -t ghcr.io/root-de/applied-cybersecurity/scan:latest
+      run: docker build . -t ghcr.io/flxw/applied-cybersecurity/scan:latest
     - name: Push
-      run: docker push ghcr.io/root-de/applied-cybersecurity/scan:latest
+      run: docker push ghcr.io/flxw/applied-cybersecurity/scan:latest
     
 
